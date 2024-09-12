@@ -1,4 +1,4 @@
-package com.example.expenseSrivce.dto;
+package com.example.expenseService.dto;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

@@ -1,6 +1,6 @@
-package com.example.expenseSrivce.repositry;
+package com.example.expenseService.repositry;
 
-import com.example.expenseSrivce.enitites.Expense;
+import com.example.expenseService.enitites.Expense;
 import org.springframework.data.repository.CrudRepository;
 
 import java.sql.Timestamp;
@@ -9,12 +9,12 @@ import java.util.Optional;
 
 public interface ExpenseRepositary extends CrudRepository<Expense,Long> {
 
-    List<Expense> findByUserId(Long userId);
+    List<Expense> findByUserId(String userId);
 
     List<Expense> findByUserIdAndCreatedAtBetween(String userId, Timestamp startTime, Timestamp endTime);
 
 
-    Optional<Expense>findByUserIdAndExpenseId(Long userId, Long expenseId);
+    Optional<Expense>findByUserIdAndExternalId(String userId, String expenseId);
 
 
 

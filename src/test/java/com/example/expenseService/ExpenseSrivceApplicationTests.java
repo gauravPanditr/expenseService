@@ -1,4 +1,4 @@
-package com.example.expenseSrivce;
+package com.example.expenseService;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.example.expenseSrivce.consumer;
+package com.example.expenseService.consumer;
 
-import com.example.expenseSrivce.dto.ExpenseDto;
+import com.example.expenseService.dto.ExpenseDto;
 import org.apache.kafka.common.header.Headers;
 import org.apache.kafka.common.serialization.Deserializer;
 
